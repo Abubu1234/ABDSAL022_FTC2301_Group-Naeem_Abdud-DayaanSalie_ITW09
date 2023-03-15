@@ -42,9 +42,14 @@ ul { text-align: left;}
 
 footer {background-color: rgb(146, 206, 93);
 position: absolute;
-width: 100%
+width: 100%             
 
-;}
+;}  
+/*= Contact Me =*/
+    .icons {display: grid;
+    grid-template-columns: 200px 200px 200px;
+    
+grid-template-rows: ;}
 
 /* to top button */
 .page-top { width: 25px;
