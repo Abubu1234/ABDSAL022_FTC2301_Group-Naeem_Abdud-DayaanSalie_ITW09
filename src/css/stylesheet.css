@@ -1,58 +1,134 @@
 html {
-    background-color: rgb(254, 232, 200, 100%);
-    padding: 0px;
-    margin: 0px;
+  background-color: rgb(254, 232, 200, 100%);
+  padding: 0px;
+  margin: 0px;
 }
+
 /* all content */
-body{ font-size: 30px; margin: 0px;}
-.sidebar-main { display: flex;
-    margin: 0;
+body {
+  font-size: 30px;
+  margin: 0px; 
+  width: 1024px;
+  padding: 0px;
+  border: 0px;
 }
+
+.sidebar-main {
+  display: grid;
+  grid-template-columns: 175px 849px;
+
+}
+.main {flex-wrap: wrap;}
 /* aside alignments */
-aside >{ width: 10px;
-    flex-direction: column;
+aside> {
+  width: 100px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
 
 }
 
-img {
-    border-radius: 50%;
+.heroimg {
+  border-radius: 50%;
 }
 
 /* aside bg colouring */
-aside{background-color: rgb(92, 70, 138);
-text-align: center;
+aside {
+  background-color: rgb(92, 70, 138);
+  text-align: center;
 }
+
 /* header */
-    header {
-        background-color: rgb(146, 206, 93);
-        flex-direction: row;
-    }
-nav { display: flex;
-    justify-content: space-evenly;
+header {
+  
+  background-color: rgb(146, 206, 93);
+  flex-direction: row;
+  background-image: url(https://images.unsplash.com/photo-1631631480669-535cc43f2327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fA%3D%3D&w=1000&q=80   );
+  
 }
-.heading {text-align: center;}
-ul { text-align: left;}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(165, 212, 123);
+  padding: 0px;
+  margin: 0px;
+  background-image: url(https://images.unsplash.com/photo-1631631480669-535cc43f2327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fA%3D%3D&w=1000&q=80   );
+}
+
+.heading {
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+}
 
 
 /* Footer */
-.Logo { display: grid;
-    width: 50px;
+#Logo {
+  width: 50px;
+}
 
-} 
+footer {
+  background-color: rgb(146, 206, 93);
+  position: relative; 
+  width: 1024px;
+  height: 800px;
+  
+  
+}
 
-footer {background-color: rgb(146, 206, 93);
-position: absolute;
-width: 100%             
+/*= Contacts =*/
+.icons { display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 400px;
+}
 
-;}  
-/*= Contact Me =*/
-    .icons {display: grid;
-    grid-template-columns: 200px 200px 200px;
-    
-grid-template-rows: ;}
+
+#Contacts {
+  padding-left: 10px
+}
+form {
+  display: flex;
+  flex-direction: column;
+width: 300px;
+}
+
+
+textarea {
+  width: 90%;
+  height: 100px;
+}
 
 /* to top button */
-.page-top { width: 25px;
-position: fixed;
-bottom: 10px;
-right: 10px;}
+.page-top {
+  width: 25px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color:rgb(92, 70, 138) ;
+}
+
+/* Media queries */
+/* tablet */
+@media screen and (max-width: 768px) {
+  body, form  {width: 100%;
+  } 
+.icons { display: flex;
+  flex-direction: column;
+}
+.aside {width: 10px}
+.sidebar-main {display: grid;
+width: 100%;}}
+
+/* Phone */
+@media screen and (max-width: 525px) {
+  body, form  {width: 100%;
+  } 
+.icons { display: flex;
+  flex-direction: column;
+}
+.aside {width: 10px}
+.sidebar-main {display: grid;
+width: 100%;}}
