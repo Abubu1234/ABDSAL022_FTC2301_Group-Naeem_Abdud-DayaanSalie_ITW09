@@ -11,105 +11,123 @@
 
 <body>
   <div class="sidebar-main">
-  <!-- Sidebar -->
-  <aside>
-    <div class="image">
-      <source srcset="src\images\Me-small.jpg" media="(max-width: 550px )" width="50%">
-      <source srcset="src\images\Me-medium.jpg" media="(max-width: 950px )">
-      <img src="src\images\Me-large.jpg" width=90%">
-    </div>
-
-    <div class="About-Me">
-      <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto repellat rerum cupiditate, eveniet quos eos
-        doloremque odit fugiat, tempora reprehenderit temporibus sapiente doloribus pariatur in inventore nulla corporis
-        soluta?
-      </p>
-    </div>
-    <div id="Skills">
-      Skills
-      <ul>
-        <li>HTML</li>
-        <li>JavaScript</li>
-        <li>CSS</li>
-      </ul>
-    </div>
-  </aside>
-
-  <!-- Header -->
-  <main>
-
-    <header>
-      <nav>
-        <div>
-          <a href="#Experience"><h3>Experience</h3></a>
-        </div>
-        <div>
-          <a href="#Education"><h3>Education</h3></a>
-          </h>
-        </div>
-        <div>
-          <a href="#Skills"><h3>Skills</h3></a>
-        </div>
-        <div>
-          <a href="#Contact-Me"><h3>Contact Me</h3></a>
-        </div>
-      </nav>
-      <div class="heading">
-        <h1>Abdud-Dayaan Salie</h1>
-        <h2>
-          Software Development Student
-        </h2>
+    <!-- Sidebar -->
+    <aside>
+      <picture>
+        <source srcset="src\images\Me-small.jpg" media="(max-width: 425px )">
+        <source srcset="src\images\Me-medium.jpg" media="(max-width: 768px )">
+        <img class="heroimg" src="src\images\Me-large.jpg" width=90%>
+      </picture>
+    
+      <div class="About-Me">
+        <h2>About Me</h2>
+        <p>
+          A 20 year old Software Developer working at Bungie Studio
+          Owns Amazon and Co-Owner of Facebook
+        </p>
       </div>
-    </header>
-    <div class="main">
-      <div id="Experience">
-        <h3>Experience</h3>
-      </div><p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quas, molestias voluptates aspernatur hic ad
-      labore expedita reiciendis at mollitia recusandae porro ratione beatae architecto laboriosam explicabo esse
-      accusantium perferendis.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo, quas exercitationem inventore illo, vel quos
-      ullam repellat velit expedita quae odit, sed voluptates! Mollitia nobis incidunt labore reprehenderit aperiam!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus similique, vitae excepturi modi maxime
-      atque asperiores aut labore harum ipsa autem distinctio tempore laborum nobis recusandae aspernatur dolorum? Non,
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti ab nemo, possimus ipsa maiores iusto a
-      numquam vero recusandae totam ducimus, id voluptate et, cum quas aliquam ad commodi.
-      </p></div>
-    <div id="Education">
-      <h3>Education</h3>
-    </div><p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quas, molestias voluptates aspernatur hic ad
-    labore expedita reiciendis at mollitia recusandae porro ratione beatae architecto laboriosam explicabo esse
-    accusantium perferendis.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo, quas exercitationem inventore illo, vel quos
-    ullam repellat velit expedita quae odit, sed voluptates! Mollitia nobis incidunt labore reprehenderit aperiam!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate possimus similique, vitae excepturi modi maxime
-    atque asperiores aut labore harum ipsa autem distinctio tempore laborum nobis recusandae aspernatur dolorum? Non,
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti ab nemo, possimus ipsa maiores iusto a
-    numquam vero recusandae totam ducimus, id voluptate et, cum quas aliquam ad commodi.
-    </p></div>
+      <div id="Skills">
+        Skills
+        <ul>
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Header -->
+    <main>
+
+      <header>
+        <nav class="nav">
+          <div class="Experience">
+            <a href="#Experience">
+              <h3>Experience</h3>
+            </a>
+          </div class="Education">
+          <div>
+            <a href="#Education">
+              <h3>Education</h3>
+            </a>
+            </h>
+          </div>
+          <div class="Skills">
+            <a href="#Skills">
+              <h3>Skills</h3>
+            </a>
+          </div>
+          <div class="Contact-Me">
+            <a href="#Contact-Me">
+              <h3>Contact Me</h3>
+            </a>
+          </div>
+        </nav>
+        <div class="heading">
+          <h1>Abdud-Dayaan Salie</h1>
+          <h2>
+            Software Developer
+          </h2>
+        </div>
+      </header>
+      <div class="main">
+        <div id="Experience">
+          <h3>Experience 1</h3>
+        </div>
+        <p>
+          Worked on developing the Microsoft operating system for 3 years</p>
+        <p>Worked with Mark Zuckerberg to develop the interface for Facebook for 3 years
+        </p>
+      </div>
+      <div id="Education">
+        <h3>Education</h3>
+      </div>
+      <p>
+        Studied a Software Developement course at CodeSpace Academy for 1 year
+      </p>
+      <p>Studied IT at Cape Town University of Technology for 3 years
+
+
+      </p>
+  </div>
 
 
   </main>
   <!-- Footer -->
   <footer>
-    <div id="Contact-Me">
-      <h2>Contact Me</h2>
+    <div id="Contacts">
+      <h2 id="Contact-Me">Contact Me:</h2>
       <div class="icons">
 
-        <div class="left">
-          <img src="src/images/LinkedIn.png" class="Logo" id="Logo1"/>
-        </div>
-        <div class="left">
-          <img src="src/images/Call.png" class="Logo" id="Logo2" />
-        </div>
-        <div class="left">
-          <img src="src/images/Twitter.png" class="Logo" id="Logo3" />
+        <div>
+          <img src="src/images/LinkedIn.png" id="Logo" class="Logo1" />
+          <a href="https://www.linkedin.com/in/abdud-dayaan-salie-2a641a217/">LinkedIn</a>
         </div>
         <div>
-          <img src="src/images/Email.png" class="Logo" id="Logo4" />
+          <img src="src/images/Call.png" id="Logo" class="Logo2" />Call Me:<br>
+          +27 66 299 1535
+        </div>
+        <div>
+          <img src="src/images/GitHub.png" id="Logo" class="Logo3" /><a href="https://github.com/Abubu1234"> GitHub </a>
+        </div>
+        <div class="Form">
+          <a><img src="src/images/Email.png" id="Logo" class="Logo4" /> Email Me:<a>
+              <form action="https://formsubmit.co/abduddayaansalie@gmail.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="Name" id="name" />
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email" />
+                <label for="feedback">Quality of content</label>
+                <select name="Feedback" id="feedback">
+                  <option value="Select">--Please Select An Option--</option>
+                  <option value="Good">Good</option>
+                  <option value="Okay">Okay</option>
+                  <option value="Bad">Bad</option>
+                </select>
+                <label for="Message">Feedback Message</label>
+                <textarea name="Msg" id="Message"></textarea>
+                <button type="submit">Send</button>
+              </form>
         </div>
       </div>
       <a href="#top"><img src="src/images/Arrow-up.png" class="page-top" />
